@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/play.css">
+		<script src='js/play.js'></script>
+	</head>
+	<body >
+		
+			
+		<div id="home">
+			<div>
+			欢迎来到奇妙的爬山世界，
+			快来解锁神秘的冒险之旅吧！
+			</div>
+			<span id="play">
+				开始游戏
+			</span>
+		</div>
+		<div id='game'>	
+		<img id='image'src="image/person.png"/>
+		<div id="start">Play</div>
+		<div id='speed'>Speed</div>
+		<div id="stop">Stop</div>
+		<div id='sort'>排行榜</div>	
+		<div id="rule">游戏规则</div>
+		<p><span id='mtime'>00</span>:<span id='stime'>00</span>.<span>000</span></p>
+		<div  id = 'rules'>
+			游戏规则:
+			<br />
+			1.点击start开始游戏
+			<br />
+			2.点击speed可以加速
+			<br />
+			3.点击stop或者空格键可停止游戏
+			<br />
+			4.点击排行榜可显示或隐藏排行榜
+			<br />
+			5.当游戏计时到10秒时，快速按下stop或空格键停止游戏，
+			<br />
+			根据所用时间差最短排名，时间差最短的玩家排名最前
+			<br />
+			6.用时未达到10秒，就停止游戏的玩家属于违规行为，其成绩不记录
+			
+			
+		</div>
+		<div id='wrong'>玩家你好！你的游戏时长未达到10秒，将不记录排名</div>
+		
+		</div>
+		
+		
+		<table id='position' border="1" width="500">
+			<thead>
+				<th>名次</th>
+				<th>玩家ID</th>
+				<th>用时</th>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+		<audio id="music" src="image/game.mp3"  loop  autoplay style="display:none;"/>
+	</body>
+	
+</html>

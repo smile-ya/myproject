@@ -1,0 +1,92 @@
+
+.box{
+  margin-top:0px;
+  height:650px;
+  overflow:hidden;
+
+}
+
+.imglist img{
+  width:200px;
+  height:180px;
+  position:absolute;
+  animation: show 16s infinite;
+  padding: 10px 12px 12px 10px;
+  background: #eee;
+  border: 1 solid #fff;
+  -moz-box-shadow: 0px 2px 15px #333;
+    
+  
+  
+}
+
+.one{
+	margin-left:80px;
+	margin-top:-20px;
+	position: relative;
+}
+
+.two{
+	margin-top:-30px;
+	margin-left:350px;
+	
+}
+.three{
+	margin-top:-30px;
+	margin-left:630px;
+}
+.four{
+	margin-top:-30px;
+	margin-left:910px;
+}
+.five{
+	margin-top:120px;
+	margin-left:80px;
+}
+
+.six{
+	margin-top:-20px;
+	margin-left:350px;
+}
+
+.seven{
+	margin-top:-16px;
+	margin-left:630px;
+}
+
+.eight{
+	margin-top:-30px;
+	margin-left:910px;
+}
+
+
+@keyframes show{
+  0%{
+    opacity:0;
+    z-index:2;
+  }
+  6%,25%{
+    opacity:1;
+    z-index: 1;
+  }
+  31%,100%{
+    opacity:0;
+    z-index:0;
+  }
+}
+#img1{
+    animation-delay: 0s;
+}
+#img2{
+    animation-delay: 4s;
+}
+#img3{
+    animation-delay: 8s;
+}
+#img4{
+    animation-delay: 12s;
+}
+
+
+
+

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>web登录</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+			background:url(img/background.jpg) no-repeat;
+			/* background-size: 100%; */
+			
+			background-size: cover;
+			background-position: center 0;
+			-webkit-background-size: cover;
+			-o-background-size: cover;
+			}
+			.mask{
+				background:url(img/background2.jpg) no-repeat;
+				margin:340px 504px;width: 500px; height:320px;
+				position: absolute;
+				-webkit-filter: blur(15px);
+				-moz-filter: blur(15px);
+				-o-filter: blur(15px);
+				-ms-filter: blur(15px);
+				filter: blur(5px);
+				position: absolute;
+				z-index: -2;
+			}
+			form{margin:200px auto;width: 500px;border:5px solid  darkslategray; position: relative;}
+			fieldset{height:300px;font-size: 20px;}
+			fieldset p{margin-left:50px;}
+			.remember{margin-left:-100px;}
+			#login,#registerin{margin-left:-150px;width:50px;height:30px;}
+			
+			div{
+				width: 620px;
+				height: 90px;
+				margin: -50px auto;
+				
+				position: relative;
+				top:-140px;
+				border: 5px solid darkslategray;
+				overflow:hidden;
+			}
+			.slide ul {
+			  width: 620px;
+			  height: 90px;
+			  list-style: none;
+			  left:0;
+			  top:0;
+			  position:absolute;
+			 
+			}
+			div ul li{
+				float: left;
+			}
+			img{
+			  width: 143px;
+			  height: 70px;
+			  padding: 10px 0px 10px 10px;
+			  top:0;
+			  filter:alpha(opacity:70);opacity: 0.7;
+			}
+			#register{
+				display: none;
+			}
+			.change{
+				
+				position:absolute;
+				margin-left:150px;
+				margin-top:50px;
+				}
+			.change2{
+				position:absolute;
+				margin-left:170px;
+				margin-top:10px;
+			}
+			span{
+				color:cadetblue;
+				font-style: italic;
+				
+			}
+			.set{
+				margin-top:-25px;
+				margin-left:70px ;
+			}
+			.register{
+				margin-left: 370px;
+				
+				/* margin-top: -30px; */
+			}
+			#registerin{
+				width:100px;
+			}
+			fieldset{
+				border:none;
+			}
+			.one{
+				font-size: 100px;
+				width: 100px;
+				position: absolute;
+				font-family:"华文行楷";
+				margin-left: 1300px;
+				margin-top:-130px;
+			}
+			.two{
+				font-size: 100px;
+				width: 100px;
+				position: absolute;
+				font-family:"华文行楷";
+				margin-left: 1150px;
+				margin-top:-100px;
+			}
+			
+		</style>
+		<script>
+		
+					var timer=null;
+					window.onload=function ()
+					{
+						var aImg=document.getElementsByTagName('img');
+						var aLog=document.getElementById('log');
+						var aRegister=document.getElementById('register');
+						var sRegister=document.getElementById('toRegister');
+						
+						var aLogin=document.getElementsByClassName('login')[0];
+						var aRegistein=document.getElementsByClassName('registerin')[0];
+						
+						
+						var oDiv=document.getElementsByClassName('slide')[0];
+						var oUl=oDiv.getElementsByTagName('ul')[0];
+						var aLi=oUl.getElementsByTagName('li');
+						var timer=null;
+						var speed=2;
+						oUl.innerHTML=oUl.innerHTML+oUl.innerHTML;
+						oUl.style.width=aLi[0].offsetWidth*aLi.length+'px';
+						function move(){
+							
+							if(oUl.offsetLeft>0)//向右滑动
+							{
+								oUl.style.left=-oUl.offsetWidth/2+'px';
+							}
+
+							oUl.style.left=oUl.offsetLeft+speed+'px';//向右滑动
+						}
+						timer=setInterval(move,30);
+						oDiv.onmouseover=function()
+						{
+							clearInterval(timer);
+							
+						};
+						oDiv.onmouseout=function()
+						{
+							timer=setInterval(move,30);
+						};
+						
+						for(var i=0;i<aImg.length;i++)
+						{
+							aImg[i].timer=null;
+							aImg[i].onmouseover=function ()
+							{
+								startMove(this,100);
+							};
+							aImg[i].onmouseout=function ()
+							{
+								startMove(this,70);
+							};
+						}
+						
+						
+					};
+					
+					function startMove(obj,iTarget)//透明度变化
+					{
+						clearInterval(obj.timer);
+						obj.timer=setInterval(function (){
+							var cur=0;
+							
+							cur=Math.round(obj.style.opacity*100);
+								
+							var speed=(iTarget-cur)/6;
+							speed=speed>0?Math.ceil(speed):Math.floor(speed);
+							if(cur==iTarget)
+							{
+								clearInterval(obj.timer);
+							}
+							else
+							{
+								
+									obj.style.filter='alpha(opacity:'+(cur+speed)+')';
+									obj.style.opacity=(cur+speed)/100;
+								
+							}
+						},30)
+					};
+					
+					
+					function change(id){
+						
+						var aLog=document.getElementById('log');
+						var aRegister=document.getElementById('register');
+						var sRegister=document.getElementById('toRegister');
+						
+						var aLogin=document.getElementsByClassName('login')[0];
+						var aRegistein=document.getElementsByClassName('registerin')[0];
+						
+						var iD = document.getElementById(id);
+						if(iD == sRegister)
+						{
+						// var oEvent = event || ev
+						aLog.style.display='none';
+						aRegister.style.display="block";
+						// oEvent.cancelBubble = true;	
+						}
+						else
+						{
+							aLog.style.display='block';
+							aRegister.style.display="none";
+						}
+										
+						
+					};
+					
+				</script>
+	</head>
+	<body>
+		<h1 class="one">爱生活</h1>
+		<h1 class="two">从美食开始</h1>
+		
+		<form action="food.html" method="get" id="log">
+			        <fieldset>
+				           
+				            <p>
+					               <label for="name">账号：</label><input type="text" id='name' name="name">
+					        </p>
+				            <p>
+					               <label for="pwd">密码：</label><input type="password" id='pwd' name="pwd">
+					        </p>
+				            <p>
+					               <label>
+						                <input type="checkbox" class='remember' name="remember">记住我
+						               </label>
+					               <input type="submit" id="login" value='登录'>
+					        </p>
+							<p class="change">
+							还没有账号？<span id="toRegister" onclick="change('toRegister')">点击注册</span>
+							</p>		       
+			</fieldset>
+		</form>
+		
+		<form action="food.html" method="get" id="register">
+			<!-- <span>用户名：</span><input id="name" type="text" /><br />
+			<span>密码：</span><input id="age" type="text" />
+			<input id="log" type="submit" value="登录" /> -->
+
+			        <fieldset>
+				       
+				            	<p>
+					               <label for="name">手机或邮箱：</label><input type="text" id='name1' name="name">
+					            </p>
+								<br>
+								<p>
+					               <label for="pwd">设置用户名：</label><input type="text" id='user' name="user">
+					            </p>
+								<br>
+				           		 <p class="set">
+					               <label for="pwd">设置密码：</label><input type="password" id='pwd1' name="pwd">
+					            </p>
+				            	
+								<br>
+								<p class="register">
+								 <input type="submit" id="registerin" value='注册并登录'>
+								</p>
+								<p class="change2">
+								已有账号？<span id="toRegister" onclick="change()">点击登录</span>
+								</p>
+				       
+				</fieldset>
+
+		</form>
+		<div class="mask"></div>
+		<div class="slide">
+			<ul>
+
+				<li><img src="img/xiangcai1.jpg" alt="" /></li>
+				<li><img src="img/xiangcai2.jpg" alt="" /></li>
+				<li><img src="img/sichuan3.jpg" alt="" /></li>
+				<li><img src="img/yuecai3.jpg" alt="" /></li>
+
+
+			</ul>
+		</div>
+	</body>
+</html>
+

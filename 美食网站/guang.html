@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>广大美食</title>
+		<style type="text/css">
+			html{
+				background: #fff;
+			}
+			body{
+				width:100%;
+				margin:0 auto;
+				
+				background:url(img/3.1.jpg) no-repeat;
+				background-size: 100% 100%;
+				background-attachment:fixed;
+			}
+			
+			.one{
+				
+				height:410px;
+			}
+			.two{
+				height: 410px;
+				margin-top:100px;
+			}
+			.left1{
+				width:45%;
+				height:400px;
+				border-top-width: 0;
+				border-left-width:0;
+				border-right:4px solid brown;
+				border-bottom:4px solid brown;
+				border-bottom-right-radius: 100px;
+				float:left;	
+			}
+			.left2{
+				width:45%;
+				height:400px;
+				border-bottom-width: 0;
+				border-left-width:0;
+				border-right:4px solid brown;
+				border-top:4px solid brown;
+				border-top-right-radius: 100px;	
+				float:left;
+			}
+			.right1{
+				width:45%;
+				height:400px;
+				border-top-width: 0;
+				border-right-width:0;
+				border-left:4px solid brown;
+				border-bottom:4px solid brown;
+				border-bottom-left-radius: 100px;	
+				float:right;
+				/*margin-top:-400px;*/
+			}
+			.right2{
+				width:45%;
+				height:400px;
+				border-bottom-width: 0;
+				border-right-width:0;
+				border-left:4px solid brown;
+				border-top:4px solid brown;
+				border-top-left-radius: 100px;	
+				float:right;
+				
+			}
+			.name{
+				width:8rem;
+            	height:37.5rem;
+            	font-size:9.375rem;
+            	font-family:'华文行楷';
+            	margin:0 auto;
+            	padding-top:100px;
+            	color:brown;
+			}
+			
+			
+			.one1{
+				width:8rem;
+				height:37.5rem;
+            	font-size:9.375rem;
+            	font-family:'华文行楷';
+            	color:#FFFFFF;
+			}
+			.one2{
+				width:8rem;
+				height:20.5rem;
+            	font-size:9.375rem;
+            	font-family:'华文行楷';
+            	color:#FFFFFF;
+            	float:right;
+			}
+			.two1{
+				width:8rem;
+				height:37.5rem;
+            	font-size:9.375rem;
+            	font-family:'华文行楷';
+            	color:#FFFFFF;
+			}
+			.two2{
+				width:8rem;
+				height:9.5rem;
+            	font-size:9.375rem;
+            	font-family:'华文行楷';
+            	color:#FFFFFF;
+            	float:right;
+			}
+			.biaoti1{
+				width:300px;
+				height:40px;
+				background:#F9AEA5;
+				border:4px solid black;
+				border-left:0px;
+				border-right:0px;
+				margin: auto;
+				margin-top:-590px;
+				border-radius: 5px;
+				font-size:1.5rem;
+				color:#AF7256;
+            	font-family:"微软雅黑";
+            	text-align: center;
+            	line-height: 40px;
+			}
+			.biaoti2{
+				width:300px;
+				height:40px;
+				background:#F9AEA5;
+				border:4px solid black;
+				border-left:0px;
+				border-right:0px;
+				margin: auto;
+				margin-top:7px;
+				border-radius: 5px;
+				font-size:1.5rem;
+				color:#AF7256;
+            	font-family:"微软雅黑";
+            	text-align: center;
+            	line-height: 40px;
+			}
+			.jianjie1{
+				margin-left:200px;
+			}
+			.jianjie2{
+				padding-left:80px;
+			}
+			
+			p{
+				color:#000000;
+				font-size:1rem;
+				font-weight:900px;
+				
+			}
+			span {
+                      padding-bottom: 5px;
+                      border-bottom: 2px solid #AF7256;
+            }
+            img{
+            	width:200px;
+            	height: 150px;
+
+                transform: rotateZ(-340deg);
+                padding: 10px 10px 12px 10px;
+                background: #eee;
+                border: 1px solid #fff;
+                -moz-box-shadow: 0px 2px 15px #333;
+            	
+            }
+            .img1{
+            	margin-top:-100px;
+            	margin-left:-35px;
+            }
+            
+            .img2{
+            	margin-top:-55px;
+            	
+            }
+            .img3{
+            	margin-top:-260px;
+            	margin-left:650px;
+            	transform: rotateZ(290deg);
+            }
+            .img4{
+            	margin-top:-300px;
+            	margin-left:640px;
+            	transform: rotateZ(50deg);
+            }
+            p{
+				font-weight:bold;
+			}
+            
+#main{margin:0 auto; padding:0px;font-size:;text-align:center;margin:0;background:#dedede;overflow-y:hidden;position: relative;
+
+}
+#main a {
+				font-family: "华文新魏";
+				font-size: 2.7rem;
+				text-align: center;
+			}
+
+		
+			ul,
+			li,
+			a,
+			textarea,
+			input {
+				margin: 0 auto;
+				list-style: none;
+				text-decoration: none;
+			}
+			
+			ul,
+			li,
+			h1 {
+				border: none;
+				color: #CECECE;
+			}
+			
+			.menu a {
+				border: none;
+				color: #CECECE;
+				cursor: pointer;
+			}
+			
+			.menu a:hover {
+				text-decoration: none;
+			}
+			
+			
+			
+			
+			#main {
+				width: 100%;
+				height: auto;
+				text-align: center;
+			}
+			
+			.wrap {
+				width: 100%;
+				height: auto;
+				overflow: hidden;
+			}
+			
+			.f1 {
+				float: right;
+			}
+			
+			.left{
+				width: 192px;
+				height: 3000px;
+				position: fixed;
+				background: #D8C7B3;
+				margin-top: -550px;
+				margin-left:1350px;
+			}
+			
+			
+			.left .menu li {
+				margin-bottom: 3.1875rem;
+				padding-left: 1.40625rem;
+				text-align: left;
+				font-size: 1.875rem;
+				font-weight: bold;
+			}
+			
+			.zhecai {
+				margin-top: -3rem;
+			}
+			
+			.menu{
+				margin-left:-0.6rem;
+			}
+			
+			
+			
+			
+			.yuecai{
+				position:relative;
+				
+			}
+			.yuecai1{
+				display: none;
+				position: absolute;
+				width:200px;
+				margin-left:-80px;
+				color: #AF7256;
+				
+			}	
+			.left .yuecai:hover .yuecai1 {
+				display:block;
+				
+			}
+			
+			
+			
+			
+			.left .menu li a:link {
+				color: #676767;
+			}
+			
+			.left .menu li a:visited {
+				color: #676767;
+			}
+			
+			.left .menu li a:hover {
+				color: #AF7256;
+			}
+			
+			.left .menu li a:active {
+				color: #CECECE;
+			}
+			
+			.left .menu .li0:hover {
+				background: none;
+			}
+			
+			.left .menu .li1 {
+				margin-top: 2.5rem;
+			}
+			
+
+			
+			/*箭头*/
+			
+			.to_left {
+				width: 0;
+				height: 0;
+				margin-top: -15rem;
+				margin-left: -9.4rem;
+				border-left: 2.8125rem solid brown;
+				border-top: 2.8125rem solid transparent;
+				border-bottom: 2.8125rem solid transparent;
+				
+			}
+			
+			.to_right {
+				width: 0;
+				height: 0;
+				margin-top: -32rem;
+				margin-left: -100rem;
+				border-right: 2.8125rem solid brown;
+				border-top: 2.8125rem solid transparent;
+				border-bottom: 2.8125rem solid transparent;
+				float: right;
+				
+			}
+			
+			button {
+				border: none;
+				background: none;
+			}
+			
+			
+			
+		</style> 
+	</head>
+	<body>
+	<div class="one">
+		<div class="left1">
+			<div class="one1">梅</div>
+			<div class="biaoti1">梅苑——醉人小锅饭</div>
+            <div class="jianjie1">
+	           <p><span>◆梅苑饭堂四周女生宿舍环绕，绿树成荫，环境清幽。</span></p>
+               <p><span>◆一楼是大众窗口，设有水果铺、奶茶店。</span></p>
+               <p><span>◆二楼是梅苑最令人难忘的味道——各式各样的小锅饭。茶余饭后，来碗糖水也很不错。</span></p>
+               <p><span>◆三楼是清真餐厅，想尝一尝正宗新疆菜的鲜肉们可以过来尝一尝哟！</span></p>
+               <p><span>◆肉丝滑蛋刚刚从小锅里面翻了一面，还没完全煎熟。但是小哥手起手落的麻利动作已经让人胃口大开了。我决定晚上再来一个虾仁滑蛋饭。</span></p>
+               <p><span>◆铁！板！烧！我才不要告诉你梅苑的铁板烧最好吃！告诉了你就会有更多人跟我抢了！</span></p>
+               <p><span>◆黑椒猪扒、咖喱鸡扒，梅苑兰苑可以来一场关于东南亚菜的厮杀。</span></p>
+               <p><span>◆三楼清真餐厅必点大盘鸡，以及不辣的辣子肉拌面。华丽丽的一大盘，诱人得很。</span></p>
+            </div>
+            <div><img  class="img1" src="img/梅苑.jpg"/></div>
+</div>
+		
+		<div class="right1">
+			<div class="one2">兰</div>
+			<div class="biaoti2">兰苑——念念不忘兰三味</div>
+            <div class="jianjie2">
+	           <p><span>◆兰苑，位于B20对面，被公认是广大最好吃的饭堂。</span></p>
+               <p><span>◆一楼主要是大众饭菜，以粤菜为主。菜式种类繁多，价格便宜。</span></p>
+               <p><span>◆二楼主要是北方口味，主打瓦罐汤。</span></p>
+               <p><span>◆三楼，是广大饭堂的门面。高逼格装修，外加讲究的餐桌摆设。</span></p>
+               <p><span>◆兰苑烧腊饭实在是太诱人了，中午不来个双拼真的对不起连上两大节的自己。</span></p>
+               <p><span>◆煲仔饭咘噜咘噜地，冬天来一份，暖暖住家味，暖胃更暖心。</span></p>
+               <p><span>◆兰二的猪肉豆芽你不能错过。</span></p>
+               <p><span>◆喜欢吃东南亚菜的你今天是要吃咖喱鸡扒还是黑椒鸡扒？真是一个艰难的抉择。</span></p>
+                
+            </div>
+            <div><img class="img3" src="img/兰苑.jpg"/></div>
+		</div>
+		<div class="name">
+		    广州 大学
+	    </div>
+	</div>
+	<div class="two">
+		<div class="left2">
+			<div class="two1">竹</div>
+			<div class="biaoti1">竹苑——来碗老广云吞面</div>
+            <div class="jianjie1">
+	           <p><span>◆竹苑作为广大最神秘的饭堂，位于行政西一楼。</span></p>
+               <p><span>◆主要供应教师的日常餐饮。早、午餐仅对教师开放，晚餐对学生开放。</span></p>
+               <p><span>◆这里的玉米饼、午餐肉是下午茶的好选择</span></p>
+               <p><span>◆我很喜欢这里的面，感觉阿姨每次盛的面和汤都很足。</span></p>
+               <p><span>◆竹苑的环境完全不输兰苑三楼！云吞大颗料足，是老广的经典味道！</span></p>
+            </div>
+            <div>
+            	<img class="img2" src="img/竹苑.jpg"/>
+            </div>
+		</div>
+		<div class="right2">
+			<div class="two2">菊</div>
+			<div class="biaoti2">菊苑——早餐宵夜首选</div>
+            <div class="jianjie2">
+	           <p><span>◆菊苑是名副其实的大众饭堂，这里有四大饭堂里面最好吃最丰盛的早餐和宵夜。</span></p>
+               <p><span>◆一楼是南方口味，口味较清淡，还有各种各样的面食。这里供应着丰盛的早餐和宵夜。</span></p>
+               <p><span>◆二楼是大众口味，性价比很高，是吃土少年的好去处。</span></p>
+               <p><span>◆三楼是粤园餐厅，在这里，外地小鲜肉可以不出大学就可以品尝广州南粤风情饭菜。</span></p>
+               <p><span>◆来菊苑饭堂，还你一个最丰盛的深夜食堂。</span></p>
+               <p><span>◆一楼沙县小吃永远吃不厌。</span></p>
+               <p><span>◆各种各样的汤粉汤面真的是太赞了。牛腩汤面，排骨汤面，云吞面……</span></p>
+               <p><span>◆菊苑一楼的滑蛋饭、酱爆饭好评</span></p>
+               <p><span>◆菊苑清蒸鱼排一万个良心。</span></p>
+               
+            </div>
+            <div>
+            	<img class="img4" src="img/菊苑.jpg"/>
+            </div>
+		</div>
+	</div>	
+	
+		
+	<div id="main" >
+          <div class="wrap">
+            <div class="left ">
+                <ul class="menu ">
+                    
+                    <li class="li1">
+                    <div><a href="food.html" >首页</a></div>
+                    
+                    </li>
+                    
+                    
+                    <li>           
+                       <div ><a href="chuan.html">川菜</a></div>                                               
+                    </li>
+                    <li class="yuecai">
+                        <div>
+                            <a href="yue.html">
+                                                                        粤菜
+                            </a>
+                        </div>
+                        
+                       <ul class="yuecai1">
+                       	 <a href="guang.html" style="font-size:35px;">广大美食</a>
+                       </ul>
+                        
+                    </li>
+                    <li>
+                        <div>
+                            <a href="xiang.html">
+                                                                     湘菜
+                            </a>
+                        </div>
+                    </li>
+                    
+                    <li>
+                    <div><a href="lu.html">
+                                                                     鲁菜
+                         </a>
+                         <button class="to_left" OnClick="display()"></button>
+                    </div>
+
+                    </li>
+                    
+                    <li>
+                        <div class="zhecai">
+                            <a href="zhe.html">
+                                                                      浙菜
+                            </a>
+                        </div>
+                    </li>
+                    
+                     <li>
+                        <div>
+                            <a href="su.html">
+                                                                    苏菜
+                            </a>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div >
+                            <a href="hui.html">
+                                                                         徽菜
+                            </a>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div >
+                            <a href="min.html">
+                                                                         闽菜
+                            </a>
+                        </div>
+                    </li>
+                    
+                    
+                    <!--<li >
+                        <div >
+                            <button class="to_left" OnClick="display()"></button>
+                        </div>  
+                    </li>-->
+                    </ul>
+                    
+                   </div>
+                   </div>
+                  </div>
+        <div id="xianshi">
+        	<button class="to_right" OnClick="display()"></button>
+        </div>
+    
+		
+	</body>
+</html>
+<script type="text/javascript">
+		
+		document.getElementById("main").style.display = "none"
+		document.getElementById("xianshi").style.display = ""
+		var isdisplay = true
+		function display(){
+			if(isdisplay==false){
+				document.getElementById("main").style.display = "none"
+				document.getElementById("xianshi").style.display = ""
+				isdisplay = true
+				return
+			}
+			if (isdisplay==true){
+				document.getElementById("main").style.display = ""
+				document.getElementById("xianshi").style.display = "none"
+				isdisplay = false
+				return
+			}
+			
+		}
+</script>

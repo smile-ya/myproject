@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>徽菜文化</title>
+		<link rel="stylesheet" href="css/文字飞入.css">
+		<style type="text/css">
+			body
+			{
+				background:url(img/3.12.jpg) no-repeat;
+				background-size: 100% 100%;
+				background-attachment:fixed;
+				margin-left:0px;
+			}
+			.name{
+				width:300px;
+				height:60px;
+				border-top-right-radius:50px;
+				border-bottom-right-radius:50px;
+				background: brown;
+				font-family: "华文行楷";
+				font-size:50px;
+				line-height:60px;
+				text-align: center;
+				box-shadow: 10px 10px 5px #999999;
+				
+				
+				/*//使标题一直在网页顶部*/
+				position:fixed;
+				top:0; left:0; 
+			}
+			
+			.name1{
+				width:250px;
+				height:60px;
+				background: #FFF;
+				font-family: "华文行楷";
+				font-size:50px;
+				line-height:60px;
+				text-align: center;
+				border-radius:50px;
+				margin:auto;
+				margin-top:50px;
+			}
+			
+			
+			
+			.one{
+				width:230px;
+		        height:40px;
+				font-family: "华文行楷";
+				font-size:70px;
+				color:#676767;
+				
+			}
+			.two{
+				width:500px;
+				color:#000000
+				margin:auto;
+				margin-top:-50px;
+				border:12px solid brown;
+				
+				padding:10px;
+			}
+			
+			.three{
+				width:1100px;
+				height:100px;
+				color:#FFFFFF;
+				margin:0 auto;
+				border:5px solid #AF7256;
+				border-radius:50px;
+				padding:10px;
+			}
+			
+			
+			
+			.f1{
+				float:right;
+				margin-top:100px;
+			}
+			.f2{
+				margin-left:1400px;
+			}
+			#main{margin:0 auto; padding:0px;font-size:;text-align:center;margin:0;background:#dedede;overflow-y:hidden;position: relative;
+
+}
+#main a {
+				font-family: "华文新魏";
+				font-size: 2.7rem;
+				text-align: center;
+			}
+			
+			ul,
+			li,
+			p,
+			span,
+			a,
+			img,
+			h1,
+			textarea,
+			input {
+				margin: 0 auto;
+				list-style: none;
+				text-decoration: none;
+			}
+			
+			ul,
+			li,
+			p,
+			span,
+			img,
+			h1 {
+				border: none;
+				color: #000000;
+			}
+			
+			.menu a {
+				border: none;
+				color: #CECECE;
+				cursor: pointer;
+			}
+			
+			.menu a:hover {
+				text-decoration: none;
+			}
+			
+			h1,
+			h2,
+			h3,
+			h4,
+			form,
+			input,
+			dl,
+			dt,
+			dd,
+			b {
+				margin: 0 auto;
+				padding: 0;
+			}
+			
+			em {
+				font-style: normal;
+			}
+			
+			.clear {
+				clear: both;
+			}
+			
+			#main {
+				width: 100%;
+				height: auto;
+				text-align: center;
+			}
+			
+			.wrap {
+				width: 100%;
+				height: auto;
+				overflow: hidden;
+			}
+			
+			.f1 {
+				float: right;
+			}
+			
+			.left {
+				width: 12rem;
+				height: 187.5rem;
+				position: fixed;
+				color: #fff;
+				text-align: center;
+				background: #D8C7B3;
+				margin-left: 109rem;
+				margin-top: -72.5rem;
+			}
+			
+			
+			.left .menu li {
+				margin-bottom: 3.1875rem;
+				padding-left: 0.5rem;
+				text-align: left;
+				font-size: 1.875rem;
+				font-weight: bold;
+			}
+			
+			.zhecai {
+				margin-top: -2rem;
+			}
+			
+			
+			
+			
+			
+			.yuecai{
+				position:relative;
+				
+			}
+			.yuecai1{
+				display: none;
+				position: absolute;
+				width:200px;
+				margin-left:-70px;
+				color: #AF7256;
+				
+			}	
+			.left .yuecai:hover .yuecai1 {
+				display:block;
+				
+			}
+			
+			
+			
+			
+			.left .menu li a:link {
+				color: #676767;
+			}
+			
+			.left .menu li a:visited {
+				color: #676767;
+			}
+			
+			.left .menu li a:hover {
+				color: #AF7256;
+			}
+			
+			.left .menu li a:active {
+				color: #CECECE;
+			}
+			
+			.left .menu .li0:hover {
+				background: none;
+			}
+			
+			.left .menu .li1 {
+				margin-top: 2.5rem;
+			}
+			
+
+			
+			/*箭头*/
+			
+			.to_left {
+				width: 0;
+				height: 0;
+				margin-top: -15rem;
+				margin-left: -9rem;
+				border-left: 2.8125rem solid brown;
+				border-top: 2.8125rem solid transparent;
+				border-bottom: 2.8125rem solid transparent;
+				
+			}
+			
+			.to_right {
+				width: 0;
+				height: 0;
+				margin-top: -40rem;
+				margin-left: -100rem;
+				border-right: 2.8125rem solid brown;
+				border-top: 2.8125rem solid transparent;
+				border-bottom: 2.8125rem solid transparent;
+				float: right;
+				
+			}
+			
+			button {
+				border: none;
+				background: none;
+			}
+			p{
+				font-weight:bold;
+			}
+			p .one{
+				font-weight: normal;
+			}
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		
+			<div class="name" >
+				徽菜文化
+			</div>
+			<p class="one f1">品其味</p>
+			<p class="one f2">知其源</p>
+			<p class="two">	
+			  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;徽菜系是指皖南、沿江、沿淮之地的特色菜品。
+皖南菜包括黄山、歌县(古徽州)、屯溪等地，讲究火功，善烹野味，量大油重，朴素实惠，保持原汁原味。不少菜肴都是取用木炭小火炖、烧、蒸而成，汤清味醇，原锅上席，香气四溢。皖南虽水产不多，但烹制经腌制的“臭桂鱼”知名度很高。
+沿江菜以芜湖、安庆地区为代表，以后也传到合肥地区，它以烹制河鲜、家畜见长，讲究刀工，注意色、形。善用糖调味，尤以烟熏菜肴别具一格。
+            
+            </p>
+            
+            <div class="name1">
+            	臭鳜鱼
+            </div>
+            
+            <div class="three">
+              <p class="feiru1">又称臭桂鱼、桶鲜鱼、桶鱼，腌鲜鱼，是一道传统名菜，徽菜的代表之一，在安徽徽州地区（徽州即今安徽省黄山市一带）所谓腌鲜，在徽州本地土话中有臭的意思。
+              </p>
+              
+              <p class="feiru2">这“风味鳜鱼”闻起来臭，吃起来香，肉质鲜嫩、醇滑爽口，保持了鳜鱼的本味原汁。俗名臭鳜鱼。制法独特，食而得异香。
+              </p>
+            
+            </div>
+            <div>
+            	<img class="page5-tu1" src="img/臭鳜鱼.jpg" alt="臭鳜鱼"/>
+            </div>
+            
+            
+		    <div class="name1">
+            	问政山笋
+            </div>
+            
+            <div class="three">
+              <p class="feiru1">问政山笋是徽州山区传统名菜。 竹笋是徽菜中的一味山珍，问政山笋在所有的笋味中最为鲜嫩，但不够香，加上香肠、香菇等增香，则弥补了不足，这道菜就称为两香问政山笋。
+              </p>
+              
+              <p class="feiru2">将笋加火腿骨、鲜猪肉骨烧焖，中途加进香肠、香菇。成熟后去骨装盘。菜品有红（香肠）、褐（香菇）、奶黄（问政山笋）三种颜色。笋经烧焖则入味透、质脆嫩，有香肠、香菇等混合芳香，是黄山春季时令菜。
+              </p>
+            
+            </div>
+            <div>
+            	<img class="page5-tu2" src="img/问政山笋.jpg" alt="问政山笋"/>
+            </div>
+		
+		
+		    <div class="name1">
+            	徽州豆黄
+            </div>
+            
+            <div class="three">
+              <p class="feiru1">徽州豆黄馃是徽州地区传统的小吃，一种集香、黄、酥、脆为一体，味美可口，风味独特的传统珍馐食品，叫石头馃。
+              </p>
+              
+              <p class="feiru2">它采用山泉和上好的面粉团，包上各种配料独特的馅子，做成两面厚薄均匀并撒上黑芝麻的馃，放在平底铁锅中，用木炭文火烤烘时，馃上面放一块圆形青石头，烤制而成。
+              </p>
+            
+            </div>
+            <div>
+            	<img class="page5-tu3" src="img/徽州豆黄馃.jpg" alt="徽州豆黄馃"/>
+            </div>
+		
+		
+		    <div class="name1">
+            	拔丝芋头
+            </div>
+            
+            <div class="three">
+              <p class="feiru1">拔丝芋头是一道传统名菜。芋头营养价值高，富含蛋白质、钙、磷、铁、钾、镁、钠、胡萝卜素、烟酸、维生素C、B族维生素、皂角甙等多种成分，有益胃、宽肠、通便、解毒、补中益肝肾、消肿止痛、益胃健脾、散结、调节中气、化痰、添精益髓等功效。该食谱美味营养。
+              </p>
+              
+              <p class="feiru2">同时要注意，多食芋头会导致肠胃胀气，芋头一定要熟食，生食有微毒。
+              </p>
+            
+            </div>
+            <div>
+            	<img class="page5-tu4" src="img/拔丝芋头.jpg" alt="拔丝芋头"/>
+            </div>
+		
+<div id="main" >
+          <div class="wrap">
+            <div class="left ">
+                <ul class="menu ">
+                    
+                    <li class="li1">
+                    <div><a href="food.html" >首页</a></div>
+                    </li>
+                    
+                    
+                    <li>           
+                       <div ><a href="chuan.html">川菜</a></div>                                               
+                    </li>
+                    <li class="yuecai">
+                        <div>
+                            <a href="yue.html">
+                                                                        粤菜
+                            </a>
+                        </div>
+                        
+                       <ul class="yuecai1">
+                       	 <a href="guang.html" style="font-size:35px;">广大美食</a>
+                       </ul>
+                        
+                    </li>
+                    <li>
+                        <div>
+                            <a href="xiang.html">
+                                                                     湘菜
+                            </a>
+                        </div>
+                    </li>
+                    
+                    <li>
+                    <div><a href="lu.html">
+                                                                     鲁菜
+                         </a>
+                         <button class="to_left" OnClick="display()"></button>
+                    </div>
+
+                    </li>
+                    
+                    <li>
+                        <div class="zhecai">
+                            <a href="zhe.html">
+                                                                      浙菜
+                            </a>
+                        </div>
+                    </li>
+                    
+                     <li>
+                        <div>
+                            <a href="su.html">
+                                                                    苏菜
+                            </a>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div >
+                            <a href="hui.html">
+                                                                         徽菜
+                            </a>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div >
+                            <a href="min.html">
+                                                                         闽菜
+                            </a>
+                        </div>
+                    </li>
+                    
+                    
+                    <!--<li >
+                        <div >
+                            <button class="to_left" OnClick="display()"></button>
+                        </div>  
+                    </li>-->
+                    </ul>
+                    
+                   </div>
+                   </div>
+                  </div>
+        <div id="xianshi">
+        	<button class="to_right" OnClick="display()"></button>
+        </div>
+    
+		
+	</body>
+</html>
+<script type="text/javascript">
+		
+		document.getElementById("main").style.display = "none"
+		document.getElementById("xianshi").style.display = ""
+		var isdisplay = true
+		function display(){
+			if(isdisplay==false){
+				document.getElementById("main").style.display = "none"
+				document.getElementById("xianshi").style.display = ""
+				isdisplay = true
+				return
+			}
+			if (isdisplay==true){
+				document.getElementById("main").style.display = ""
+				document.getElementById("xianshi").style.display = "none"
+				isdisplay = false
+				return
+			}
+			
+		}
+</script>

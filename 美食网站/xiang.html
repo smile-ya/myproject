@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>湘菜文化</title>
+		<link rel="stylesheet" href="css/文字飞入.css">
+		<style type="text/css">
+			body {
+				background: url(img/3.14.jpg) no-repeat;
+				background-size: 100% 100%;
+				background-attachment: fixed;
+				margin-left: 0px;
+			}
+			
+			.name {
+				width: 300px;
+				height: 60px;
+				border-top-right-radius: 50px;
+				border-bottom-right-radius: 50px;
+				background: brown;
+				font-family: "华文行楷";
+				font-size: 50px;
+				line-height: 60px;
+				text-align: center;
+				box-shadow: 10px 10px 5px #999999;
+				/*//使标题一直在网页顶部*/
+				position: fixed;
+				top: 0;
+				left: 0;
+			}
+			
+			.name1 {
+				width: 250px;
+				height: 60px;
+				background: #FFF;
+				font-family: "华文行楷";
+				font-size: 50px;
+				line-height: 60px;
+				text-align: center;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 50px;
+			}
+			
+			.one {
+				width: 230px;
+				height: 40px;
+				font-family: "华文行楷";
+				font-size: 70px;
+				color: #676767;
+			}
+			
+			.two {
+				width: 500px;
+				color: #000000;
+				margin: auto;
+				margin-top: -50px;
+				border: 12px solid brown;
+				padding: 10px;
+			}
+			
+			.three {
+				width: 1100px;
+				height: 100px;
+				color: #FFFFFF;
+				margin: 0 auto;
+				border: 5px solid #AF7256;
+				border-radius: 50px;
+				padding: 10px;
+			}
+			
+			.f1 {
+				float: right;
+				margin-top: 100px;
+			}
+			
+			.f2 {
+				margin-left: 1400px;
+			}
+			
+			#main {
+				margin: 0 auto;
+				padding: 0px;
+				font-size: ;
+				text-align: center;
+				margin: 0;
+				background: #dedede;
+				overflow-y: hidden;
+				position: relative;
+			}
+			
+			#main a {
+				font-family: "华文新魏";
+				font-size: 2.7rem;
+				text-align: center;
+			}
+			
+			ul,
+			li,
+			p,
+			span,
+			a,
+			img,
+			h1,
+			textarea,
+			input {
+				margin: 0 auto;
+				list-style: none;
+				text-decoration: none;
+			}
+			
+			ul,
+			li,
+			p,
+			span,
+			img,
+			h1 {
+				border: none;
+				color: #000000;
+			}
+			
+			.menu a {
+				border: none;
+				color: #CECECE;
+				cursor: pointer;
+			}
+			
+			.menu a:hover {
+				text-decoration: none;
+			}
+			
+			h1,
+			h2,
+			h3,
+			h4,
+			form,
+			input,
+			dl,
+			dt,
+			dd,
+			b {
+				margin: 0 auto;
+				padding: 0;
+			}
+			
+			em {
+				font-style: normal;
+			}
+			
+			.clear {
+				clear: both;
+			}
+			
+			#main {
+				width: 100%;
+				height: auto;
+				text-align: center;
+			}
+			
+			.wrap {
+				width: 100%;
+				height: auto;
+				overflow: hidden;
+			}
+			
+			.f1 {
+				float: right;
+			}
+			
+			.left {
+				width: 12rem;
+				height: 187.5rem;
+				position: fixed;
+				color: #fff;
+				text-align: center;
+				background: #D8C7B3;
+				margin-left: 109rem;
+				margin-top: -69.5rem;
+			}
+			
+			.left .menu li {
+				margin-bottom: 3.1875rem;
+				padding-left: 0.5rem;
+				text-align: left;
+				font-size: 1.875rem;
+				font-weight: bold;
+			}
+			
+			.zhecai {
+				margin-top: -2rem;
+			}
+			
+			.yuecai {
+				position: relative;
+			}
+			
+			.yuecai1 {
+				display: none;
+				position: absolute;
+				width: 200px;
+				margin-left: -70px;
+				color: #AF7256;
+			}
+			
+			.left .yuecai:hover .yuecai1 {
+				display: block;
+			}
+			
+			.left .menu li a:link {
+				color: #676767;
+			}
+			
+			.left .menu li a:visited {
+				color: #676767;
+			}
+			
+			.left .menu li a:hover {
+				color: #AF7256;
+			}
+			
+			.left .menu li a:active {
+				color: #CECECE;
+			}
+			
+			.left .menu .li0:hover {
+				background: none;
+			}
+			
+			.left .menu .li1 {
+				margin-top: 2.5rem;
+			}
+			/*箭头*/
+			
+			.to_left {
+				width: 0;
+				height: 0;
+				margin-top: -15rem;
+				margin-left: -9rem;
+				border-left: 2.8125rem solid brown;
+				border-top: 2.8125rem solid transparent;
+				border-bottom: 2.8125rem solid transparent;
+			}
+			
+			.to_right {
+				width: 0;
+				height: 0;
+				margin-top: -40rem;
+				margin-left: -100rem;
+				border-right: 2.8125rem solid brown;
+				border-top: 2.8125rem solid transparent;
+				border-bottom: 2.8125rem solid transparent;
+				float: right;
+			}
+			
+			button {
+				border: none;
+				background: none;
+			}
+			p{
+				font-weight:bold;
+			}
+			p .one{
+				font-weight: normal;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="name ">
+			湘菜文化
+		</div>
+		<p class="one f1">品其味</p>
+		<p class="one f2">知其源</p>
+		<p class="two">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;湘菜，即湖南菜，在长沙地区又被称为本味菜，是中国历史悠久的八大菜系之一，早在汉朝就已经形成菜系。以湘江流域、洞庭湖区和湘西山区三种地方风味为主。 湘菜制作精细，用料上比较广泛，口味多变，品种繁多；色泽上油重色浓，讲求实惠；品味上注重香辣、香鲜、软嫩；制法上以煨、炖、腊、蒸、炒诸法见称。
+
+		</p>
+
+		<div class="name1">
+			爆炒黄鳝
+		</div>
+
+		<div class="three">
+			<p class="feiru1">爆炒鳝鱼是由鳝鱼为主要食材，大蒜、豆瓣、姜片、
+			</p>
+
+			<p class="feiru2">
+				葱段、酱油、盐、味精、水豆粉、大料、花椒、胡椒、料酒为辅料制作而成的一道菜品。口味微辣。
+			</p>
+
+		</div>
+		<div>
+			<img class="page5-tu1" src="img/xiangcai1.jpg" alt="爆炒黄鳝" />
+		</div>
+
+		<div class="name1">
+			尖椒鱼头
+		</div>
+
+		<div class="three">
+			<p class="feiru1">尖椒鱼头是湖南湘潭的传统名菜，属于湘菜系。以鱼的“味鲜”和剁辣椒的“辣”为一体，风味独具一格。
+			</p>
+
+			<p class="feiru2">特别指出的是此菜所使用的油是茶油。主料是鱼头、尖椒、蒜、姜、葱。
+			</p>
+
+		</div>
+		<div>
+			<img class="page5-tu2" src="img/xiangcai2.jpg" alt="尖椒鱼头" />
+		</div>
+
+		<div class="name1">
+			手撕包菜
+		</div>
+
+		<div class="three">
+			<p class="feiru1">手撕包菜是一道色香味俱全的汉族名菜，属于湘菜系。
+			</p>
+
+			<p class="feiru2">此菜红白相间，麻辣鲜香，爽脆清甜，除了可开胃增食欲外，还有美白祛斑、预防感冒和胃溃疡等作用。
+			</p>
+
+		</div>
+		<div>
+			<img class="page5-tu3" src="img/xiangcai5.jpg" alt="手撕包菜" />
+		</div>
+
+		<div class="name1">
+			香辣羊肚丝
+		</div>
+
+		<div class="three">
+			<p class="feiru1">如果你想要香香的、脆脆的、酥酥的、辣辣的选香辣羊肚丝就对了，
+			</p>
+
+			<p class="feiru2">香辣羊肚丝是集合高端食材的一门食物，包你看到它就会胃口大开，合不拢嘴，是中餐食物中，必不可少的食物之一。
+			</p>
+
+		</div>
+		<div>
+			<img class="page5-tu4" src="img/xiangcai4.jpg" alt="香辣羊肚丝" />
+		</div>
+
+		<div id="main">
+			<div class="wrap">
+				<div class="left ">
+				        <ul class="menu ">
+				            
+				            <li class="li1">
+				            <div><a href="food.html" >首页</a></div>
+				            </li>
+				            
+				            
+				            <li>           
+				               <div ><a href="chuan.html">川菜</a></div>                                               
+				            </li>
+				            <li class="yuecai">
+				                <div>
+				                    <a href="yue.html">
+				                                                                粤菜
+				                    </a>
+				                </div>
+				                
+				               <ul class="yuecai1">
+				               	 <a href="guang.html" style="font-size:35px;">广大美食</a>
+				               </ul>
+				                
+				            </li>
+				            <li>
+				                <div>
+				                    <a href="xiang.html">
+				                                                             湘菜
+				                    </a>
+				                </div>
+				            </li>
+				            
+				            <li>
+				            <div><a href="lu.html">
+				                                                             鲁菜
+				                 </a>
+				                 <button class="to_left" OnClick="display()"></button>
+				            </div>
+				
+				            </li>
+				            
+				            <li>
+				                <div class="zhecai">
+				                    <a href="zhe.html">
+				                                                              浙菜
+				                    </a>
+				                </div>
+				            </li>
+				            
+				             <li>
+				                <div>
+				                    <a href="su.html">
+				                                                            苏菜
+				                    </a>
+				                </div>
+				            </li>
+				            
+				            <li>
+				                <div >
+				                    <a href="hui.html">
+				                                                                 徽菜
+				                    </a>
+				                </div>
+				            </li>
+				            
+				            <li>
+				                <div >
+				                    <a href="min.html">
+				                                                                 闽菜
+				                    </a>
+				                </div>
+				            </li>
+				            
+				            
+				            <!--<li >
+				                <div >
+				                    <button class="to_left" OnClick="display()"></button>
+				                </div>  
+				            </li>-->
+				            </ul>
+				            
+				           </div>
+				           </div>
+				          </div>
+				<div id="xianshi">
+					<button class="to_right" OnClick="display()"></button>
+		</div>
+
+	</body>
+
+</html>
+<script type="text/javascript">
+	document.getElementById("main").style.display = "none"
+	document.getElementById("xianshi").style.display = ""
+	var isdisplay = true
+
+	function display() {
+		if(isdisplay == false) {
+			document.getElementById("main").style.display = "none"
+			document.getElementById("xianshi").style.display = ""
+			isdisplay = true
+			return
+		}
+		if(isdisplay == true) {
+			document.getElementById("main").style.display = ""
+			document.getElementById("xianshi").style.display = "none"
+			isdisplay = false
+			return
+		}
+
+	}
+</script>

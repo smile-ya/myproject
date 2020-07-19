@@ -1,0 +1,186 @@
+#main{margin:0 auto; padding:0px;font-size:;text-align:center;margin:0;background:#dedede;overflow-y:hidden;position: relative;
+
+}
+#main a {
+				font-family: "华文新魏";
+				font-size: 2.7rem;
+				text-align: center;
+			}
+			
+			ul,
+			li,
+			p,
+			span,
+			a,
+			img,
+			h1,
+			textarea,
+			input {
+				margin: 0 auto;
+				list-style: none;
+				text-decoration: none;
+			}
+			
+			ul,
+			li,
+			p,
+			span,
+			img,
+			h1 {
+				border: none;
+				color: #CECECE;
+			}
+			
+			.menu a {
+				border: none;
+				color: #CECECE;
+				cursor: pointer;
+			}
+			
+			.menu a:hover {
+				text-decoration: none;
+			}
+			
+			h1,
+			h2,
+			h3,
+			h4,
+			form,
+			input,
+			dl,
+			dt,
+			dd,
+			b {
+				margin: 0 auto;
+				padding: 0;
+			}
+			
+			em {
+				font-style: normal;
+			}
+			
+			.clear {
+				clear: both;
+			}
+			
+			#main {
+				width: 100%;
+				height: auto;
+				text-align: center;
+			}
+			
+			.wrap {
+				width: 100%;
+				height: auto;
+				overflow: hidden;
+			}
+			
+			.f1 {
+				float: right;
+			}
+			
+			/* .left {
+				
+				color: #fff;
+				text-align: center;
+				
+				margin-left: 1000px;
+				
+			} */
+			.left{
+				width: 192px;
+				height: 3000px;
+				position: fixed;
+				background: #D8C7B3;
+				margin-top: -550px;
+				margin-left:1350px;
+			}
+			
+			.left .menu li {
+				margin-bottom: 51px;
+				padding-left: 22.5px;
+				text-align: left;
+				font-size: 30px;
+				font-weight: bold;
+			}
+			
+			.zhecai {
+				margin-top:-32px;
+			}
+			
+			.yuecai{
+				position:relative;
+				
+			}
+			.yuecai1{
+				display: none;
+				position: absolute;
+				width:230px;
+				margin-left:-37px;
+				color: #AF7256;
+				
+			}	
+			.left .yuecai:hover .yuecai1 {
+				display:block;
+				
+			}
+			
+			
+			
+			
+			.left .menu li a:link {
+				color: #676767;
+			}
+			
+			.left .menu li a:visited {
+				color: #676767;
+			}
+			
+			.left .menu li a:hover {
+				color: #AF7256;
+			}
+			
+			.left .menu li a:active {
+				color: #CECECE;
+			}
+			
+			.left .menu .li0:hover {
+				background: none;
+			}
+			
+			.left .menu .li1 {
+				margin-top: 40px;
+			}
+			
+
+			
+			/*箭头*/
+			
+			.to_left {
+				width: 0;
+				height: 0;
+				margin-top: -900px;
+				margin-left: -21.6px;
+				border-left: 45px solid brown;
+				border-top: 45px solid transparent;
+				border-bottom: 45px solid transparent;
+				
+			}
+			
+			.to_right {
+				width: 0;
+				height: 0;
+				margin-top: -70px;
+				margin-left: -1600px;
+				border-right: 60px solid brown;
+				border-top: 60px solid transparent;
+				border-bottom: 60px solid transparent;
+				float: right;
+				
+			}
+			
+			button {
+				border: none;
+				background: none;
+			}
+			

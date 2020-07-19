@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的简历</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script>
+			window.onload = function(){
+				
+				var wechat = document.getElementById('wechat');
+				var qr = wechat.getElementsByTagName('i')[0];;
+				var contact = document.getElementById('contact');
+				var img = contact.getElementsByTagName('img')[0];
+				console.log(img)
+				qr.onmouseover = function (){
+					img.style.display = 'block';
+				},
+				qr.onmouseout = function (){
+					img.style.display = 'none';
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id='content'>
+			<div id='left'>
+				<div id='title'>
+					<h2>个人简历</h2>
+					<p>求职意向：前端开发</p>
+				</div>
+				<div id='education'>
+					<h4>教育经历<span>/Education</span></h4>
+					<p>
+						广州大学计算机科学与网络工程学院&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017.09-2021.06<br />
+						网络工程专业/本科<br />
+						主修课程:程序设计基础、高等数学，离散数学、线性代数、数据结构、数据库原理、计算机组成
+					</p>
+				</div>
+				<div id='program'>
+					<h4>项目经验<span>&nbsp;/Experience</span></h4>
+					<p><span>2018/07-2019/12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  自然语言处理系统项目</span><br />         
+						工作岗位：广州大学计算机实验研究中心    语言处理系统研究助理<br />
+						内容：负责自然语言处理系统的前端开发工作以及前后端框架搭建工作<br/>
+						<span>2016/12-2017/12      广州大学校团委公众号网页设计</span><br/>    
+						工作岗位：广州大学计算机实验研究中心		前端开发<br/>    
+						内容：负责广州大学校团委组织新闻稿推送网页端网页设计和开发<br/>
+						<span>2017/05-2017/07    广州大学生命科学学院项目简介设计</span><br/>  
+						工作岗位：广州大学实验研究中心 			前端开发<br/>         
+						内容：完成广州大学生命科学学院项目简介信息的网页制作<br/>
+					</p>
+				</div>
+				<div id='practice'>
+					<h4>实践经历<span>&nbsp;/Practice</span></h4>
+					<p><span>2019/07—2019/08 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美国华盛顿大学访学项目&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;访学成员</span><br />
+						主要工作：通过考核和筛选，代表广州大学计算机学院到美国华盛顿大学参与为期半个月的“人工智能”访学项目，并获得优异成绩以及相关证书。<br/>
+						<span>2018/09-2019/09 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广州大学计算机学院团委学生会 &nbsp;&nbsp;&nbsp;服务部部长</span><br/>
+						主要工作： 负责广州大学特色项目“五室一站”的管理和建设，组织并策划了丰富的计算机义务维修活动。计算机专业知识讲座在年度考核中，我院负责的“五室一站”获得广州大学优秀单位称号。<br/>
+						<span>2019/07 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;广州大学石围塘夏令营活动 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;志愿者</span><br/>
+						主要工作：志愿参与广大青协与荔湾区石围塘街联合举办的以青少年为活动对象的一系列趣味课程活动，认真教授水火箭制作课程、摄影大赛、网络画板等相关知识。<br/>
+						<span>2017/9-2018/9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广州大学校团委新闻中心&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公众号运营和维护者。</span><br/>
+						主要工作：参与校内举办的各类学术和心理讲座的新闻稿的撰写，公众号推文的排版编辑以及拍摄。
+					</p>
+				</div>
+				<div id='awards'>
+					<h4>荣誉奖励<span>&nbsp;/Certificate</span></h4>
+					<p>
+						连续两年获得国家励志奖学金；<br/>
+						广州大学第十四届网页设计大赛决赛人气奖；<br/>
+						广州大学“优秀学生”荣誉称号；<br />
+						广州大学“优秀学生干部”荣誉称号 
+					</p>
+				</div>
+				<div id='selfcomment'>
+					<h4>自我评价<span>&nbsp;/Self-evaluation</span></h4>
+					<p>
+						工作认真仔细，逻辑思维、创新意识强，待人真诚，责任心强，有良好的团队合作精神。<br/>
+						热爱阅读，喜欢运动。
+					</p>
+				</div>
+			</div>
+			<div id='right'>
+				<div id='photo'>
+					<img src="image/photo.jpg" />
+				</div>
+				<div id='basic'>
+					<h3>基础信息</h3>
+					<br/>
+					<div>姓名:李丽</div>
+					<div id='born'><i></i><span>生日:1998.10</span></div>
+					<div id='place'>现居:广东广州</div>
+					<div id='daxue'>学历:大学本科</div>
+					<div id='zhuangye'>专业:网络工程</div>
+				</div>
+				<div class='contact' id='contact'>
+					<h3>联系方式</h3>
+					<br/>
+					<img src='image/wechat.png' />
+					<div id='phone'><i></i><span>电话:15365503022</span></div>
+					
+					<div id='wechat'><i></i><span>微信:a15360093022</span></div>
+					<div id='mail'><i></i><span>E-mail:</span></div>
+					<div id='qqmail'>&nbsp;&nbsp;&nbsp;1060563249@qq.com</div>
+				</div>
+				<div id='skill'>
+					<h3>专业技能</h3>
+					<br/>
+					<div>办公技能:熟悉掌握PS、视频制作等办公软件。</div>
+					<div>专业技能:能够熟练运用HTML、CSS、JavaScript，熟练掌握vue框架，构建高性能的Web应用程序；<br/>
+					后端语言有一定的了解；熟练掌握计算机网络相关知识</div>
+									
+				</div>
+				<div id='hobby'>
+					<h3>兴趣爱好</h3>
+					<br/>
+					<div><i></i><span>阅读、运动
+					<br />每天坚持跑步</span></div>	
+					
+				
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
